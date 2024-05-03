@@ -1,4 +1,4 @@
-__title__ = "aslr-ctf"
+__title__ = "aslrCTF"
 __description__ = "aslr tools for ctf challenges"
 __version__ = "1.0.0"
 __author__ = "mosafaf15"

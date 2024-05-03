@@ -2,3 +2,4 @@ colorama
 pwn
 pwntools
 ropper
+tabulate
