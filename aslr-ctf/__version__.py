@@ -1,0 +1,5 @@
+__title__ = "aslr-ctf"
+__description__ = "aslr tools for ctf challenges"
+__version__ = "1.0.0"
+__author__ = "mosafaf15"
+__author_email__ = "mosafaf84@gmail.com"

@@ -1,6 +1,6 @@
 from pwn import *
 from colorama import Fore, Back, Style
-from time import sleep
+# from time import sleep
 
 
 class find():
@@ -13,25 +13,6 @@ class find():
         self.op = "p"
         self.decode = True
         self.valid_types = ["list", "set", "tuple", "str", "dict"]
-
-    def auto(self, exploit_function, file_name, **kwargs):
-        if kwargs.get("query"):
-            self.q = kwargs.get("query")
-        if kwargs.get("return_type"):
-            self.retrun_type = kwargs.get("return_type")
-        if kwargs.get("order"):
-            self.order = kwargs.get("order")
-        if kwargs.get("lines"):
-            self.lines = kwargs.get("lines")
-        if kwargs.get("sleep"):
-            self.sleep = kwargs.get("sleep")
-        if kwargs.get("op"):
-            self.op = kwargs.get("op")
-        if kwargs.get("decode"):
-            self.decode = kwargs.get("decode")
-        elif self.return_type not in self.valid_types:
-            return log.error(f"{Fore.WHITE} return_type only can be {Fore.GREEN} list, set, tuple, str, dict {Fore.WHITE} not {Fore.RED}{ self.return_type}")
-        log.failure(f"starting ...")
 
     def custom(self, exploit_function, **kwargs):
         self.exploit_function = exploit_function
