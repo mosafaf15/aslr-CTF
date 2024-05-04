@@ -1,9 +1,0 @@
-README.md
-setup.py
-aslrCTF/__init__.py
-aslrCTF/__version__.py
-aslrCTF.egg-info/PKG-INFO
-aslrCTF.egg-info/SOURCES.txt
-aslrCTF.egg-info/dependency_links.txt
-aslrCTF.egg-info/requires.txt
-aslrCTF.egg-info/top_level.txt
