@@ -1,5 +1,5 @@
 from pwn import log, process, ELF
-from colorama import Fore, Back, Style
+# from colorama import Fore, Back, Style
 from tabulate import tabulate
 from time import sleep
 
@@ -20,7 +20,12 @@ class Find:
 
 
 class FindInObjects(Find):
-    def __init__(self, ouputs, decode: bool = True, verbose: bool = False):
+    def __init__(self, ouputs:list|set, decode: bool = True, verbose: bool = False):
+        """FindInObjects
+
+        Args:
+            ouputs (list): list of objects
+        """
         self.outputs = ouputs
         super().__init__(decode, verbose)
 
@@ -166,5 +171,7 @@ class FindByPlan(Find):
         if self.verbose or self.table:
             table = tabulate(self.outputs, headers=header, tablefmt="grid")
             print(table)
+        if self.verbose:
+            log.warning(f"found {len(self.outputs)} objects")
 
         return self.outputs

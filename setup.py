@@ -4,7 +4,7 @@ setup(
     name="aslrCTF",
     author="mosafaf15",
     author_email="mosafaf84@gmail.com",
-    version='1.0',
+    version='1.0.0',
     packages=[
         'aslrCTF',
     ],
@@ -14,8 +14,10 @@ setup(
         'ropper',
         'colorama',
         'tabulate',
+        'string',
+        'platform',
         # 'inspect',
-        'time',
         # 'time',
+        'python-time'
     ]
 )
