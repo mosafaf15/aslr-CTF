@@ -14,6 +14,8 @@ setup(
         'ropper',
         'colorama',
         'tabulate',
+        # 'inspect',
+        'time',
         # 'time',
     ]
 )
