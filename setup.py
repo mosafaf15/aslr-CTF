@@ -14,8 +14,8 @@ setup(
         'ropper',
         'colorama',
         'tabulate',
-        'string',
-        'platform',
+        # 'string',
+        # 'platform',
         # 'inspect',
         # 'time',
         'python-time'
